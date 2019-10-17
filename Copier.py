@@ -65,13 +65,13 @@ class Copier:
 
 if __name__ == '__main__':
 
-    # with open('dir_config.txt', 'r') as f:
-    #     dirs = []
-    #     for line in f:
-    #         dirs.append(line.replace('\n', ''))
-    #     copy_from, copy_to = dirs
+    with open('dir_config.txt', 'r') as f:
+        dirs = []
+        for line in f:
+            dirs.append(line.replace('\n', ''))
+        copy_from, copy_to = dirs
 
-    copy_from = r'C:\Users\lavrinov.METEORM\YandexDisk\cloud\PycharmProjects\My\Copier/Test_Dir_1'
-    copy_to = r'C:\Users\lavrinov.METEORM\YandexDisk\cloud\PycharmProjects\My\Copier/Test_Dir_2'
+    # copy_from = r'C:\Users\lavrinov.METEORM\YandexDisk\cloud\PycharmProjects\My\Copier/Test_Dir_1'
+    # copy_to = r'C:\Users\lavrinov.METEORM\YandexDisk\cloud\PycharmProjects\My\Copier/Test_Dir_2'
     my_copier = Copier(copy_from, copy_to)
-    my_copier.watch(period=5)
+    my_copier.watch(period=60)
