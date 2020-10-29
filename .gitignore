@@ -1,3 +1,6 @@
 
 test_copier.py
 *.pyc
+build/
+dist/
+*.spec
